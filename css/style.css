@@ -226,15 +226,27 @@ img {
   margin-right: 10px;
 }
 
-/* Стилізація головної частини сторінки. Мейн */
-
 /* Головна секція */
 
-.head-section {
+.section-hero {
   background-color: var(--main-bcg-cl);
 }
 
-.main-title {
+.section-hero__overlay {
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)),
+    url(../img/img-bcg-hero.jpg);
+}
+
+.section-hero__container {
+  justify-content: center;
+}
+
+.section-hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -249,10 +261,7 @@ img {
   margin: 0 auto 30px;
 }
 
-.main-container {
-  justify-content: center;
-}
-.button-main {
+.section-hero__button {
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -271,19 +280,9 @@ img {
   transition: background-color var(--time-anime) var(--cubic-biz-1);
 }
 
-.button-main:hover,
-.button-main:focus {
+.section-hero__button:hover,
+.section-hero__button:focus {
   background-color: var(--col-bcg-11);
-}
-
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)),
-    url(../img/img-bcg-hero.jpg);
 }
 
 /* Секція - Перелік переваг Студії */
