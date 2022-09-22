@@ -1,12 +1,11 @@
-/* Скидання стилів */
-
-h1,
+/* Скидання стилів h1, */
 h2,
 h3,
 p,
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 /* Змінні*/
@@ -19,6 +18,7 @@ ul {
   --ligt-cl-txt: #ffffff;
   --tx-col-11: #000;
   --tx-col-12: rgba(255, 255, 255, 0.6);
+  --tx-col-13: rgba(117, 117, 117, 0.5);
 
   /* Колір фону */
   --main-bcg-cl: #2f303a;
@@ -27,9 +27,21 @@ ul {
   --col-grad-12: rgba(47, 48, 58, 0.4);
   --col-bcg-13: rgba(33, 150, 243, 0.9);
   --col-ov-14: rgba(0, 0, 0, 0.2);
+  --col-bcg-15: rgba(255, 255, 255, 0.1);
 
   /* Колір іконок */
   --col-icon-11: #afb1b8;
+
+  /* Колір бордера */
+
+  --col-brd-11: rgba(255, 255, 255, 0.3);
+  --col-brd-12: rgba(33, 33, 33, 0.2);
+
+  /* Тіні */
+
+  --shad-11: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shad-12: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   /* Інше */
   --col-bd-11: #ececec;
@@ -55,6 +67,8 @@ img {
   height: auto;
 }
 
+/* Глобальні стилі */
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -69,6 +83,25 @@ img {
   margin-right: auto;
 }
 
+/* Приховує заголовоки по всьому сайту */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* .list {
+  list-style-type: none;
+} */
+
 /* Стилізація головної сторінки, хедера та футера */
 
 /* Хедер */
@@ -81,27 +114,22 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-
-/* Логотип - перша частина хедер та футер */
-.logo-part-1 {
   color: var(--link-cl-txt);
 }
 
+/* Логотип - перша частина хедер та футер */
+/* .logo-part-1 {
+  color: var(--link-cl-txt);
+} */
+
 /* Логотип - друга частина хедер */
-.logo-part-2 {
+.logo__dark {
   color: var(--tx-col-11);
 }
 
 /* Логотип - друга частина футер  */
-.logo-part-3 {
+.logo__light {
   color: var(--ligt-cl-txt);
-}
-
-/* Прибирає у списках по всьому сайту "декор" */
-
-.list {
-  list-style-type: none;
 }
 
 /* Стилізує контакти хедер */
@@ -147,7 +175,7 @@ img {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: #2196f3;
+  background-color: var(--link-cl-txt);
   bottom: -1.5%;
   left: 0;
 
@@ -161,7 +189,7 @@ img {
   opacity: 1;
 }
 
-.container.container-header {
+.header__wrapper {
   display: flex;
 }
 
@@ -172,7 +200,6 @@ img {
 .navigation {
   display: flex;
   align-items: center;
-
   margin-right: auto;
 }
 
@@ -188,7 +215,7 @@ img {
   margin-right: 50px;
 }
 
-.logo-header {
+.logo--header {
   padding-top: 24px;
   margin-right: 93px;
   padding-bottom: 25px;
@@ -225,8 +252,6 @@ img {
 .main-container {
   justify-content: center;
 }
-
-/* Кнопка головної секції */
 .button-main {
   font-family: inherit;
   font-size: 16px;
@@ -263,21 +288,6 @@ img {
 
 /* Секція - Перелік переваг Студії */
 
-/* Приховує заголовоки по всьому сайту */
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .title-advantage {
   text-transform: uppercase;
   font-size: 14px;
@@ -301,28 +311,27 @@ img {
   justify-content: center;
 }
 
-/* Секція - Перелік послуг */
-.title-team-services {
+/* Секція - Послуги */
+
+.section-services__title,
+.section-clients__title,
+.section-team__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.list-services {
+.section-services__list {
   display: flex;
   gap: 30px;
 }
 
-.list-services > li {
-  width: 370px;
-}
-
-.section.section-services {
+.section-services {
   padding-top: 0;
 }
 
-.title-services {
+.section-services__name-service {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -338,62 +347,60 @@ img {
   left: 0;
 }
 
-.item-servicers-img {
+.section-services__item {
   position: relative;
+  width: 370px;
 }
 
-/* Секція - Перелік членів команди */
-.section-our-team {
+/* Секція - Перелік команди */
+
+.section-team {
   background-color: var(--srcond-bcg-cl);
 }
 
-.list-item-team {
+.section-team__item-team {
   background-color: var(--ligt-cl-txt);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shad-12);
 }
 
-.title-team {
+.cont-team-descr__title {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.profession {
+.cont-team-descr__profession {
   line-height: 1.19;
   text-align: center;
   color: var(--second-cl-txt);
   margin-bottom: 16px;
 }
 
-.list-team {
+.section-team__list {
   display: flex;
   justify-content: space-between;
 }
 
-.title-team {
-  margin-bottom: 10px;
-}
-
-.team-name-container {
+.cont-team-descr {
   padding: 30px 32px;
 }
 
-.list-socials-icon {
+.container-socials {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 
-.list-socials-icon > li {
+.container-socials__list {
   height: 44px;
   width: 44px;
 }
 
-.social-link {
+.container-socials__link {
   display: flex;
   height: 100%;
   width: 100%;
@@ -409,24 +416,24 @@ img {
 
 /* Ховер та фокус - Іконкі соцмереж - Команда та Футер */
 
-.social-link:hover,
-.social-link:focus {
+.container-socials__link:hover,
+.container-socials__link:focus {
   color: var(--ligt-cl-txt);
   background-color: var(--link-cl-txt);
 }
 
 /* Секція - Постійні клієнти */
-.list-client {
+.section-clients__list {
   display: flex;
   gap: 30px;
 }
 
-.list-client > li {
+.section-clients__item {
   width: 170px;
   height: 92px;
 }
 
-.link-client {
+.section-clients__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -440,8 +447,8 @@ img {
     color var(--time-anime) var(--cubic-biz-1);
 }
 
-.link-client:hover,
-.link-client:focus {
+.section-clients__link:hover,
+.section-clients__link:focus {
   border: 1px solid var(--link-cl-txt);
   color: var(--link-cl-txt);
 }
@@ -483,7 +490,7 @@ img {
 }
 
 .footer-cont-sociallink a {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--col-bcg-15);
   color: var(--ligt-cl-txt);
 }
 
@@ -502,6 +509,7 @@ img {
 }
 
 /* Стилізація ссилок у футері псевдокласами */
+
 .link-adr-footer:hover,
 .link-adr-footer:focus,
 .link-map:hover,
@@ -509,7 +517,7 @@ img {
   color: var(--link-cl-txt);
 }
 
-.logo.logo-footer {
+.logo-footer {
   display: inline-block;
 
   margin-bottom: 20px;
@@ -534,7 +542,7 @@ img {
   width: 200px;
   height: 50px;
   padding: 10px 62px 10px 28px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shad-11);
   border-radius: 4px;
   background-color: var(--link-cl-txt);
 
@@ -572,11 +580,11 @@ img {
 
   background-color: inherit;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid var(--col-brd-11);
+  filter: drop-shadow(var(--shad-11));
   border-radius: 4px;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--tx-col-12);
   transition: border-color var(--time-anime) var(--cubic-biz-1);
 }
 
@@ -765,8 +773,7 @@ img {
 
   padding: 40px;
   background-color: var(--ligt-cl-txt);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shad-12);
   border-radius: 4px;
 
   transform: scale(1) translate(-50%, -50%);
@@ -830,7 +837,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--ligt-cl-txt);
   background-color: var(--link-cl-txt);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shad-11);
   border-radius: 4px;
   border: none;
 
@@ -864,7 +871,7 @@ img {
   height: 40px;
   padding-left: 42px;
   padding-right: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--col-brd-12);
   border-radius: 4px;
   font-size: 12px;
   outline: transparent;
@@ -892,7 +899,7 @@ img {
   resize: none;
   font-size: 12px;
   outline: transparent;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--col-brd-12);
   border-radius: 4px;
   transition: border-color var(--time-anime) var(--cubic-biz-1);
 }
@@ -905,7 +912,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--tx-col-13);
 }
 
 .icon-checked {
