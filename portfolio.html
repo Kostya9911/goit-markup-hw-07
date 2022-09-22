@@ -295,38 +295,38 @@
     <!-- Підвал -->
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="footer__container container">
         <!-- Лого -->
-        <div class="footer-cont-address">
-          <a class="logo logo-footer" href="index.html"
+        <div class="footer__contacts">
+          <a class="logo logo--footer" href="index.html"
             >Web<span class="logo__light" lang="en">Studio</span></a
           >
           <address class="address">
-            <ul class="list">
-              <li class="item-link-addr">
+            <ul class="address__list list">
+              <li class="address__item">
                 <a
-                  class="link-map"
+                  class="address__link-map"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >м. Київ, пр-т Лесі Украінки, 26</a
                 >
               </li>
-              <li class="item-link-addr">
-                <a class="link-adr-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="item-link-addr">
-                <a class="link-adr-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-cont-sociallink">
-          <h2>Приєднуйтесь</h2>
+        <div class="footer__socials">
+          <strong class="footer__title">Приєднуйтесь</strong>
           <ul class="container-socials">
             <li class="container-socials__list">
               <a
-                class="container-socials__link"
+                class="container-socials__link container-socials__link--footer"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -339,7 +339,7 @@
             </li>
             <li class="container-socials__list">
               <a
-                class="container-socials__link social-link"
+                class="container-socials__link social-link container-socials__link--footer"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -352,7 +352,7 @@
             </li>
             <li class="container-socials__list">
               <a
-                class="container-socials__link social-link"
+                class="container-socials__link social-link container-socials__link--footer"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -365,7 +365,7 @@
             </li>
             <li class="container-socials__list">
               <a
-                class="container-socials__link social-link"
+                class="container-socials__link social-link container-socials__link--footer"
                 href="https://ua.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -378,16 +378,22 @@
             </li>
           </ul>
         </div>
-        <div class="footer-div-subscribe">
-          <strong>Підпишіться на розсилку</strong>
-          <form class="list-subscribe">
-            <label for="mail"
-              ><input type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="off"
+        <div class="footer__form-subscribe">
+          <strong class="footer__title">Підпишіться на розсилку</strong>
+          <form class="footer__container-form">
+            <label class="footer__label" for="mail"
+              ><input
+                class="footer__input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+                autocomplete="off"
             /></label>
 
-            <button class="btn-subscribe" type="submit">
+            <button class="footer__btn-subscribe" type="submit">
               Підписатися
-              <svg class="ico-subscribe" width="24px" height="24px">
+              <svg class="footer__ico-btn-subscribe" width="24px" height="24px">
                 <use href="./img/icon.svg#telegram-ico"></use>
               </svg>
             </button>
