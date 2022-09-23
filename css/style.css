@@ -67,8 +67,6 @@ img {
   height: auto;
 }
 
-/* Глобальні стилі */
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -98,15 +96,8 @@ img {
   margin: -1px;
 }
 
-/* .list {
-  list-style-type: none;
-} */
-
-/* Стилізація головної сторінки, хедера та футера */
-
 /* Хедер */
 
-/* Стилизация логотипа - хедер та футер */
 .header {
   border-bottom: 1px solid var(--col-bd-11);
 }
@@ -135,6 +126,8 @@ img {
   margin-right: 10px;
 }
 
+/* Стилизация логотипа - хедер та футер */
+
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -148,7 +141,6 @@ img {
   color: var(--tx-col-11);
 }
 
-/* Логотип - друга частина футер  */
 .logo__light {
   color: var(--ligt-cl-txt);
 }
@@ -164,6 +156,8 @@ img {
 
   margin-bottom: 20px;
 }
+
+/* Глобальны стилы ссилок хедера */
 
 .link {
   font-weight: 500;
@@ -187,15 +181,6 @@ img {
 .current {
   color: var(--link-cl-txt);
 }
-
-/* Логотип - перша частина хедер та футер */
-/* .logo-part-1 {
-  color: var(--link-cl-txt);
-} */
-
-/* Логотип - друга частина хедер */
-
-/* Стилізує контакти хедер */
 
 .nav {
   display: flex;
@@ -240,9 +225,6 @@ img {
 }
 
 /* Головна секція */
-
-/* ===========================================
-===========================================  */
 
 .section-hero {
   background-color: var(--main-bcg-cl);
@@ -325,7 +307,6 @@ img {
 
 .section-advantage__item:not(:last-child) {
   margin-right: 30px;
-  /* width: 270px; */
 }
 
 .section-advantage__subtitle {
