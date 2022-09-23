@@ -21,32 +21,32 @@
     <!-- Хедер -->
     <header class="header">
       <div class="header__wrapper container">
-        <nav class="navigation">
+        <nav class="nav">
           <!-- Лого -->
           <a class="logo logo--header" href="./index.html"
             >Web<span class="logo__dark" lang="en">Studio</span>
           </a>
-          <ul class="list list-nav">
-            <li class="item-nav">
-              <a class="link current" href="./index.html">Студія</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link link current" href="./index.html">Студія</a>
             </li>
-            <li class="item-nav">
-              <a class="link" href="./portfolio.html">Портфоліо</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="item-nav"><a class="link" href="">Контакти</a></li>
+            <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list list-contact">
-          <li class="item-nav">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg width="16px" height="12px">
+        <ul class="header__list-contact">
+          <li class="header__item-contact">
+            <a class="header__link-contact link" href="mailto:info@devstudio.com">
+              <svg class="header__icon-contact" width="16px" height="12px">
                 <use href="./img/icon.svg#icon-mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item-nav">
-            <a class="link" href="tel:+380961111111">
-              <svg width="10px" height="16px">
+          <li class="header__item-contact">
+            <a class="header__link-contact link" href="tel:+380961111111">
+              <svg class="header__icon-contact" width="10px" height="16px">
                 <use href="./img/icon.svg#icon-tel"></use></svg
               >+38 096 111 11 11</a
             >
@@ -490,7 +490,7 @@
             >Web<span class="logo__light" lang="en">Studio</span></a
           >
           <address class="address">
-            <ul class="address__list list">
+            <ul class="address__list">
               <li class="address__item">
                 <a
                   class="address__link-map"
@@ -527,7 +527,7 @@
             </li>
             <li class="container-socials__list">
               <a
-                class="container-socials__link social-link container-socials__link--footer"
+                class="container-socials__link container-socials__link--footer"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -540,7 +540,7 @@
             </li>
             <li class="container-socials__list">
               <a
-                class="container-socials__link social-link container-socials__link--footer"
+                class="container-socials__link container-socials__link--footer"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -553,7 +553,7 @@
             </li>
             <li class="container-socials__list">
               <a
-                class="container-socials__link social-link container-socials__link--footer"
+                class="container-socials__link container-socials__link--footer"
                 href="https://ua.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -594,41 +594,41 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
+        <button class="modal__btn" type="button" data-modal-close>
           <svg width="11px" height="11px">
             <use href="./img/icon.svg#close-btn"></use>
           </svg>
         </button>
         <form class="register-form" name="register-form">
-          <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
-          <div class="register-form-group" role="group">
-            <label class="register-form-field" for="name">
-              <span class="register-form-label">Ім'я</span>
-              <input class="register-form-input" type="text" name="name" id="name" />
-              <svg class="register-form-icon" width="18px" height="18px">
+          <strong class="register-form__title">Залиште свої дані, ми вам передзвонимо</strong>
+          <div class="register-form__group" role="group">
+            <label class="register-form__field" for="name">
+              <span class="register-form__label">Ім'я</span>
+              <input class="register-form__input" type="text" name="name" id="name" />
+              <svg class="register-form__icon" width="18px" height="18px">
                 <use href="./img/icon.svg#person"></use>
               </svg>
             </label>
 
-            <label class="register-form-field" for="tel">
-              <span class="register-form-label">Телефон</span>
-              <input class="register-form-input" type="tel" name="tel" id="tel" />
-              <svg class="register-form-icon" width="18px" height="18px">
+            <label class="register-form__field" for="tel">
+              <span class="register-form__label">Телефон</span>
+              <input class="register-form__input" type="tel" name="tel" id="tel" />
+              <svg class="register-form__icon" width="18px" height="18px">
                 <use href="./img/icon.svg#phone"></use>
               </svg>
             </label>
 
-            <label class="register-form-field" for="email">
-              <span class="register-form-label">Пошта</span>
-              <input class="register-form-input" type="email" name="mail" id="email" />
-              <svg class="register-form-icon" width="18px" height="18px">
+            <label class="register-form__field" for="email">
+              <span class="register-form__label">Пошта</span>
+              <input class="register-form__input" type="email" name="mail" id="email" />
+              <svg class="register-form__icon" width="18px" height="18px">
                 <use href="./img/icon.svg#email"></use>
               </svg>
             </label>
-            <label class="register-form-field" for="message">
-              <span class="register-form-label">Коментар</span>
+            <label class="register-form__field" for="message">
+              <span class="register-form__label">Коментар</span>
               <textarea
-                class="register-form-message"
+                class="register-form__message"
                 name="message"
                 id="message"
                 rows="5"
@@ -636,22 +636,22 @@
               ></textarea>
             </label>
           </div>
-          <label class="register-rorm-agrement" for="policy">
+          <label class="register-rorm__agrement" for="policy">
             <input
-              class="register-form-checkbox visually-hidden"
+              class="register-form__checkbox visually-hidden"
               type="checkbox"
               name="policy"
               id="policy"
             />
-            <svg class="register-form-icons" width="16px" height="15px">
+            <svg class="register-form__icons" width="16px" height="15px">
               <use class="icon-checked" href="./img/icon.svg#checked"></use>
               <use class="icon-un-checked" href="./img/icon.svg#un-checked"></use></svg
-            ><span class="register-form-desc"
+            ><span class="register-form__desc"
               >Погоджуюся з розсилкою та приймаю
-              <a class="register-form-link" href="">Умови договору</a></span
+              <a class="register-form__link" href="">Умови договору</a></span
             ></label
           >
-          <button class="register-form-btn" type="submit">Відправити</button>
+          <button class="register-form__btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
