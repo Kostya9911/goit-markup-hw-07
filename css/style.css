@@ -285,22 +285,24 @@ img {
   background-color: var(--col-bcg-11);
 }
 
-/* Секція - Перелік переваг Студії */
+/* Секція - Переваги */
 
-.title-advantage {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
+/* .section-advantage{} */
+
+.section-advantage__list {
+  display: flex;
 }
 
-.advantage {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--second-cl-txt);
+.section-advantage__item {
+  width: 270px;
 }
 
-.svg-advantage {
+.section-advantage__item:not(:last-child) {
+  margin-right: 30px;
+  /* width: 270px; */
+}
+
+.section-advantage__icon-wrap {
   display: flex;
   margin-bottom: 30px;
   background-color: var(--srcond-bcg-cl);
@@ -308,6 +310,19 @@ img {
   height: 120px;
   align-items: center;
   justify-content: center;
+}
+
+.section-advantage__subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
+.section-advantage__advantage-descr {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-cl-txt);
 }
 
 /* Секція - Послуги */
@@ -688,19 +703,6 @@ img {
 .link-project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.list.list-advantage {
-  display: flex;
-}
-
-.item-advantage:not(:last-child) {
-  margin-right: 30px;
-  width: 270px;
-}
-
-.item-advantage {
-  width: 270px;
 }
 
 .thumb-project {
