@@ -1,0 +1,31 @@
+.section-clients {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+
+  &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--col-icon-11);
+    color: var(--col-icon-11);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    transition: border var(--time-anime) var(--cubic-biz-1),
+      color var(--time-anime) var(--cubic-biz-1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid var(--link-cl-txt);
+    color: var(--link-cl-txt);
+  }
+}

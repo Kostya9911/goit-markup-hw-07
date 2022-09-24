@@ -1,0 +1,21 @@
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  color: var(--tx-col-12);
+  transition: color var(--time-anime) var(--cubic-biz-1);
+
+  &:hover,
+  &:focus {
+    color: var(--link-cl-txt);
+  }
+}
+
+.address__link--map {
+  color: var(--ligt-cl-txt);
+}

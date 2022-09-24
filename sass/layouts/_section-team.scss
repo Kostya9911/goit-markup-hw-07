@@ -1,0 +1,14 @@
+.section-team {
+  background-color: var(--srcond-bcg-cl);
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-team {
+    background-color: var(--ligt-cl-txt);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    box-shadow: var(--shad-12);
+  }
+}

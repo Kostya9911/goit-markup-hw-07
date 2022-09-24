@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__link::after {
+    position: absolute;
+
+    flex-direction: column;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--link-cl-txt);
+    bottom: -1.5%;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity var(--time-anime) var(--cubic-biz-1);
+  }
+
+  &__link:hover::after,
+  &__link:focus::after {
+    opacity: 1;
+  }
+}

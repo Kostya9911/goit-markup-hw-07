@@ -1,0 +1,18 @@
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  color: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  transition: color var(--time-anime) var(--cubic-biz-1);
+
+  &:hover,
+  &:focus {
+    color: var(--link-cl-txt);
+  }
+}

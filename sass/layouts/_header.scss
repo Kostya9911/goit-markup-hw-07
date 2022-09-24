@@ -1,0 +1,29 @@
+/* Хедер */
+
+.header {
+  border-bottom: 1px solid var(--col-bd-11);
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__list-contact {
+    color: var(--second-cl-txt);
+    display: flex;
+  }
+
+  &__item-contact:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link-contact {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__icon-contact {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

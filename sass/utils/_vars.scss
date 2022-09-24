@@ -1,0 +1,44 @@
+/* Змінні*/
+:root {
+  /* Колір тексту */
+
+  --main-cl-txt: #212121;
+  --second-cl-txt: #757575;
+  --link-cl-txt: #2196f3;
+  --ligt-cl-txt: #ffffff;
+  --tx-col-11: #000;
+  --tx-col-12: rgba(255, 255, 255, 0.6);
+  --tx-col-13: rgba(117, 117, 117, 0.5);
+
+  /* Колір фону */
+  --main-bcg-cl: #2f303a;
+  --srcond-bcg-cl: #f5f4fa;
+  --col-bcg-11: #188ce8;
+  --col-grad-12: rgba(47, 48, 58, 0.4);
+  --col-bcg-13: rgba(33, 150, 243, 0.9);
+  --col-ov-14: rgba(0, 0, 0, 0.2);
+  --col-bcg-15: rgba(255, 255, 255, 0.1);
+
+  /* Колір іконок */
+  --col-icon-11: #afb1b8;
+
+  /* Колір бордера */
+
+  --col-brd-11: rgba(255, 255, 255, 0.3);
+  --col-brd-12: rgba(33, 33, 33, 0.2);
+
+  /* Тіні */
+
+  --shad-11: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shad-12: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  /* Інше */
+  --col-bd-11: #ececec;
+  --col-bd-12: #eee;
+  --col-bd-13: rgba(0, 0, 0, 0.1);
+
+  /* Анімації */
+  --cubic-biz-1: cubic-bezier(0.4, 0, 0.2, 1);
+  --time-anime: 250ms;
+}

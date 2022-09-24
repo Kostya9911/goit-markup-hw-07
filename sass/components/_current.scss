@@ -1,0 +1,7 @@
+.current {
+  color: var(--link-cl-txt);
+
+  &:after {
+    opacity: 1;
+  }
+}

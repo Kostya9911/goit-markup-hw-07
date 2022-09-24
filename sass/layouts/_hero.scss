@@ -1,0 +1,57 @@
+/* Головна секція */
+
+.section-hero {
+  background-color: var(--main-bcg-cl);
+  &__overlay {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)),
+      url(../img/img-bcg-hero.jpg);
+  }
+
+  &__container {
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+
+    color: var(--ligt-cl-txt);
+
+    margin: 0 auto 30px;
+  }
+
+  &__button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--ligt-cl-txt);
+    background-color: var(--link-cl-txt);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    width: 216px;
+    height: 50px;
+
+    transition: background-color var(--time-anime) var(--cubic-biz-1);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--col-bcg-11);
+  }
+}
